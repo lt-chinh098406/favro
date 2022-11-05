@@ -1,5 +1,5 @@
 <template>
-  <div class=""><h1>Favro</h1></div>
+  <div class=""><h1>Favro Header</h1></div>
 </template>
 
 <script>
