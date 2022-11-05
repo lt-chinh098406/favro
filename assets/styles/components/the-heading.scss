@@ -1,0 +1,52 @@
+.heading {
+  text-align: center;
+  word-break: break-all;
+
+  &--lg {
+    font-size: 32px;
+  }
+
+  &--sm {
+    font-size: 24px;
+  }
+
+  &--xs {
+    font-size: 20px;
+  }
+
+  &__highlight {
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    padding: 0 34px;
+
+    @include bp(sm) {
+      font-size: 24px;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      width: 30px;
+      height: 3px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+
+      @apply tw-bg-black;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      left: 0;
+    }
+
+    &::after {
+      transform: rotate(135deg);
+      right: 0;
+    }
+  }
+}

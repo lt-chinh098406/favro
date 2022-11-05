@@ -1,0 +1,20 @@
+::v-deep.theme {
+  &--light.v-tabs {
+    & > .v-tabs-bar {
+      .v-tab {
+        /* stylelint-disable-next-line selector-class-pattern */
+        &:not(.v-tab--active) {
+          @apply tw-text-black;
+        }
+      }
+    }
+
+    .v-slide-group {
+      &__wrapper {
+        border-bottom: 2px solid;
+
+        @apply tw-border-slate-50;
+      }
+    }
+  }
+}

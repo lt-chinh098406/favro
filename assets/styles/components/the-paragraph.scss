@@ -1,0 +1,18 @@
+.paragraph {
+  &__title {
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 20px;
+    word-break: break-all;
+  }
+
+  &__area-content {
+    margin-top: 16px;
+  }
+
+  &__content {
+    font-size: 14px;
+    margin-bottom: 0;
+    word-break: break-all;
+  }
+}

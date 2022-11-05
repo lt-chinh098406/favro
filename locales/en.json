@@ -1,0 +1,16 @@
+{
+  "appName": "Favro",
+  "common": {
+    "header": {
+      "login": "",
+      "signUp": "",
+      "help": ""
+    }
+  },
+  "loginPage": {
+    "content": {
+      "investor": "",
+      "businessPeople": ""
+    }
+  }
+}

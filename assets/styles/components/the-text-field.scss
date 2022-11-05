@@ -1,0 +1,46 @@
+::v-deep.v-input.v-text-field {
+  .v-text-field {
+    &__details {
+      padding: 0;
+    }
+  }
+
+  .v-messages {
+    &__message {
+      font-weight: bold;
+      line-height: 16px;
+    }
+  }
+
+  &--is-disabled {
+    @apply tw-bg-black tw-bg-opacity-[0.06];
+
+    border: 0;
+
+    .v-input {
+      &__slot {
+        fieldset {
+          border: 0;
+        }
+
+        input {
+          @apply tw-text-black tw-text-opacity-[0.87];
+        }
+      }
+    }
+  }
+
+  .v-input {
+    &__icon--clear {
+      display: none;
+    }
+  }
+
+  &:hover {
+    .v-input {
+      &__icon--clear {
+        display: inline-flex;
+      }
+    }
+  }
+}
